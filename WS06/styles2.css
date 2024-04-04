@@ -1,4 +1,4 @@
-#ekaotsikko {
+.ekaotsikko {
     background-color: rgb(248, 218, 223);
     color: rgb(204, 61, 192);
     font-size: 24px;    
@@ -7,7 +7,7 @@
     text-align: center;
 }
 
-#navhor {
+.navhor {
     text-align:center;
     background-color: lightpink;
     color: purple;
@@ -16,12 +16,12 @@
     margin: 15px;
 }
 
-#navhor a:hover {
+.navhor a:hover {
     color: palevioletred;
 }
 
 
-#navvert {
+.navvert {
     float: left;
     width: 200px;
     height: 600px;
@@ -33,16 +33,15 @@
 }
 
 
-
-#navvert a {
+.navvert a {
     color: purple;
     text-decoration: none;
 }
 
 .leipis {
     float: right;
-    margin-left: 20%;
-    margin-right: 20%;
+    margin-left: 300px;
+    margin-right: 100px;
     width: 800px;
     height: 600px;
     padding: 10px;
@@ -155,3 +154,10 @@ position: fixed;
 bottom: 0;
 }
 
+
+#runo {
+    border-color: black
+    border-style: dotted;
+    width: 300px;
+    height: 300px;
+}
