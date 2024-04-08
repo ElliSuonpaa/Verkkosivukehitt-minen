@@ -10,10 +10,14 @@ h1 {
 }
 
 p {
-    background-image: url("ruoho.jpg");
+    border-style: solid;
+    border-radius: 3px;
+    border-color: rgb(77, 20, 131);
+    background-color: rgb(197, 144, 144);
     font-size: 20px ;
     color: black ;
     width: 300px;
+  
         
 }
 
@@ -57,4 +61,6 @@ hr {
 }
 
 
-
+div {
+    width: auto;
+}
