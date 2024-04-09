@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Second.html -sivu</title>
-    <link rel="stylesheet" type="text/css" href="./styles2.css">
+    <link rel="stylesheet" type="text/css" href="./css-tiedostot/styles2.css">
 </head>
 <body>
     <main>
@@ -18,41 +18,57 @@
             <a href="third.html" class="linkki"> Tästä third-sivulle </a>
         </nav>
 
-        
-        <p> Seppo on pieni poni Vantaalta. Seppo on söpö ja pörröinen. <br>
+        <nav class="navvert">
+            <h5> Sepon kaverit:</h5>
+            <ul> 
+              <li> Eino</li>  
+              <li> Tiivi</li>   
+              <li> Santtu</li> 
+              <li> Sakke</li> 
+            </ul>
+
+            <br>
+            <br>
+
+            <figure>
+                <img src="poninkuva2.jpg" alt="söpön ponin pää" id="kuva2" width="120" height="150" >
+                <figcaption> Pienen ponin pörröinen pää </figcaption>
+             </figure>
+        </nav>
+
+        <div class="leipis">
+            <p> Seppo on pieni poni Vantaalta. Seppo on söpö ja pörröinen. <br>
             Seppo tykkää jekkuilla, minkä vuoksi jotkut kutsuvat häntä tuhmaksi. <br>
             Jekkuja jekkuja jekkuja, mahdollisimman paljon jekkuja. <br>
             Jekut tekevät elämästä jännittävämpää!<br>
             <br>
-        </p>
+          </p>
 
-        <div id="Runo">
-          <h4> Runo Seppo-ponista </h4>
-          <p>
-            Seppo-poni porkkanaa haukkaa <br>
+       
+          <h3> Runo Seppo-ponista </h3>
+          <p> Seppo-poni porkkanaa haukkaa <br>
             ja rieumuiten pois laukkaa. <br>
             Laitumen nurkkaan kakkaa <br>
             samalla kun ihminen varusteita puhtaaksi hakkaa.
          </p>
-        </div>
 
-         <hr> 
+         <img src="poninkuva1.jpg" alt="poni seisoo pellolla" id="kuva1" width="200" height="130">
 
-        <img src="poninkuva1.jpg" alt="poni seisoo pellolla" id="kuva1" width="200" height="130">
-        
-
-         <hr> 
-
-         <figure>
-            <img src="poninkuva2.jpg" alt="söpön ponin pää" id="kuva2" width="120" height="150" >
-            <figcaption> Pienen ponin pörröinen pää </figcaption>
-         </figure>
-
-         <hr> 
+         <br>
+         <br>
+         <br>
+         <br>
 
          <label for="bar"> Sepon jekkujen määrä viikon aikana</label>
          <progress id="bar" value="65" max="100"> 0% </progress>
+        </div>
+        
+
     </main>
+
+    <footer> 
+        <p> Yhteystiedot Seppo-ponin kotitallille. Jos tulet vierailulle, muista tuoda herkkuja!</p>
+    </footer>
 
 
 </body>
