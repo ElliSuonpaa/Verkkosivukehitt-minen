@@ -1,0 +1,19 @@
+body {
+    margin: 10px;
+    padding: 10px;
+    background-color: rgb(231, 209, 209);
+   
+}
+
+#kommenttikentta {
+    width: 50%;
+    height: 80px;
+    margin: 0 auto;
+}
+
+#reittikortit-container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr); /* Luo 12 yhtä suurta saraketta */
+    justify-content: center; /* Keskittää grid-itemit horisontaalisesti */
+    gap: 10px;
+}
