@@ -11,135 +11,37 @@
 <body>
     
   <!--Navigointipalkki-->
+  <div class="navigointipalkki">  
   <ul class="nav nav-tabs">
     <li class="nav-item">
-      <a class="nav-link active" href="./index.html">Etusivu</a>
+      <a class="nav-link" href="./index.html">Etusivu</a>
     </li>
     <li class="nav-item">
       <a class="nav-link" href="./second.html">Suunnitelmat 2024</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="./third.html">Retkitarinat</a>
+      <a class="nav-link active" href="./third.html">Retkitarinat</a>
     </li>
   </ul>
-
-     <!--Varoitusteksti-->
-      <div class="alert alert-warning">
-        <strong>Varoitus! </strong> Pyöräily voi aiheuttaa vahvaa riippuvuutta!
-      </div>
-
-      <h2> Aiemmat reitit ja retket</h2>
-
-      
-      <!--Tästä alkaa reittikorttien ryhmittely-->
-      <div id="grid-container">
-      <div class="row" >
-        <div class="col-sm-3">
-                <div class="card" style="width:400px">
-                    <img class="card-img-top" src="./images/kaldoaivi.jpg" alt="Maasturi Kaldoaivissa">
-                    <div class="card-body">
-                      <h4 class="card-title">John Doe</h4>
-                      <p class="card-text">Some example text.</p>
-                      <a href="#" class="btn btn-primary">Lataa GPX</a>
-                    </div>
-                  </div>
-            </div>
-
-            <div class="col-sm-3">
-              <div class="card" style="width:400px">
-                  <img class="card-img-top" src="./images/kaldoaivi.jpg" alt="Maasturi Kaldoaivissa">
-                  <div class="card-body">
-                    <h4 class="card-title">John Doe</h4>
-                    <p class="card-text">Some example text.</p>
-                    <a href="#" class="btn btn-primary">Lataa GPX</a>
-                  </div>
-                </div>
-          </div>
-
-          <div class="col-sm-3">
-            <div class="card" style="width:400px">
-                <img class="card-img-top" src="./images/kaldoaivi.jpg" alt="Maasturi Kaldoaivissa">
-                <div class="card-body">
-                  <h4 class="card-title">John Doe</h4>
-                  <p class="card-text">Some example text.</p>
-                  <a href="#" class="btn btn-primary">Lataa GPX</a>
-                </div>
-              </div>
-        </div>
-
-
-        <div class="col-sm-3">
-          <div class="card" style="width:400px">
-              <img class="card-img-top" src="./images/kaldoaivi.jpg" alt="Maasturi Kaldoaivissa">
-              <div class="card-body">
-                <h4 class="card-title">John Doe</h4>
-                <p class="card-text">Some example text.</p>
-                <a href="#" class="btn btn-primary">Lataa GPX</a>
-              </div>
-            </div>
-      </div>
-      
-      </div>
-
-      </div>
-
-<!--Tätä ennen yhden rivin kortit. Eka osuus siis päättyy tähän.-->
-
-        </div>
-
-        <div class="col">
-            <div class="border full-width center">
-                <p>Three col row here</p>
-               
-                <div class="card" style="width:400px">
-                    <img class="card-img-top" src="./images/loppi.jpg" alt="Maasturi Lopella">
-                    <div class="card-body">
-                      <h4 class="card-title">John Doe</h4>
-                      <p class="card-text">Some example text.</p>
-                      <a href="#" class="btn btn-primary">Lataa GPX</a>
-                    </div>
-                  </div>
-            </div>
-        </div>
-    </div>
-    <div class="col">
-      <div class="border full-width center">
-          <p>Three col row here</p>
-          <div class="border placeholder-img"></div>
-          <div class="card" style="width:400px">
-              <img class="card-img-top" src="./images/kaldoaivi.jpg" alt="Maasturi Kaldoaivissa">
-              <div class="card-body">
-                <h4 class="card-title">John Doe</h4>
-                <p class="card-text">Some example text.</p>
-                <a href="#" class="btn btn-primary">Lataa GPX</a>
-              </div>
-            </div>
-      </div>
-  </div>
-  
-  <div class="col">
-    <div class="border full-width center">
-        <p>Three col row here</p>
-        <div class="border placeholder-img"></div>
-        <div class="card" style="width:400px">
-            <img class="card-img-top" src="./images/kaldoaivi.jpg" alt="Maasturi Kaldoaivissa">
-            <div class="card-body">
-              <h4 class="card-title">John Doe</h4>
-              <p class="card-text">Some example text.</p>
-              <a href="#" class="btn btn-primary">Lataa GPX</a>
-            </div>
-          </div>
-    </div>
 </div>
 
 
-  </div>
-
-
-
-      <!--Kommenttikenttä-->
-      <div id="kommenttikentta">
-      <label for="comment">Comments:</label>
-      <textarea class="form-control" rows="5" id="comment" name="text"></textarea> <br>
-      <button type="submit" class="btn btn-primary">Submit</button> <br>
-      </div>
+<!--Tähän uutiskirjeen tilauskohta-->
+      <form action="action_page.php">
+        <div class="container-fluid">
+          <h2>Tilaa sähköpostiisi kuulumiset Ellin pyöräseikkailuista!</h2>
+          <p> Lähetän kuulumisia aika harvakseltaan ja painottuen kesäkauteen.</p>
+        </div>
+      
+        <div class="container-fluid">
+          <input type="text" placeholder="Nimi" name="name" required>
+          <input type="text" placeholder="Sähköpostiosoite" name="mail" required>
+          <label>
+            <input type="checkbox" checked="checked" name="subscribe"> Kyllä, haluan kuulla Ellin pyöräjutuista!
+          </label>
+        </div>
+      
+        <div class="container-fluid">
+          <input type="submit" value="Tilaa kirje">
+        </div>
+      </form>
